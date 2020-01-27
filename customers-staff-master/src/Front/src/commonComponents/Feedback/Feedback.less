@@ -1,0 +1,41 @@
+@import "../../Colors";
+
+:local {
+  .root {
+    background-color: @feedback-background-color;
+    padding-right: 8px;
+    border-radius: 3px;
+    margin: 12px 25px 0 25px ;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+
+    .description {
+      cursor: pointer;
+      box-sizing: border-box;
+      height: 42px;
+      padding-bottom: 3px;
+      border-radius: 3px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1 0 300px;
+      text-align: center;
+      .link {
+        text-decoration: underline;
+      }
+    }
+
+    .closeIcon {
+      cursor: pointer;
+      flex: 0 0 40px;
+    }
+  }
+}

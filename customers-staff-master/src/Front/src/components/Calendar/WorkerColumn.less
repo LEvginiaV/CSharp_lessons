@@ -1,0 +1,55 @@
+@import "./Calendar";
+:local {
+  .workerColumn {
+    box-sizing: border-box;
+    background: #F2F2F2;
+    height: @calendar-row-height * 24;
+    position: relative;
+
+    .workingTime {
+      background: white;
+      position: absolute;
+      width: 100%;
+    }
+
+    .hourDelimiter {
+      position: absolute;
+      height: 1px;
+      background: @calendar-border-color;
+      width: 100%;
+    }
+
+    .nowLine {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: -1px;
+      background: @calendar-now-color;
+      height: 1px;
+      z-index: 5;
+    }
+
+    .hoverDiv {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.05);
+      height: @calendar-row-height - 5px;
+      border-radius: 3px;
+      box-sizing: border-box;
+      left: 2px;
+      right: 2px;
+      margin: 2px 0;
+
+      padding-left: 5px;
+      color: #808080;
+      font-size: 14px;
+      line-height: @calendar-row-height - 6px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .card {
+      position: absolute;
+      width: 100%;
+    }
+  }
+}

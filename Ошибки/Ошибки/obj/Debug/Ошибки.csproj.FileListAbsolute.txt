@@ -1,0 +1,7 @@
+C:\Users\Пользователь\source\repos\Ошибки\Ошибки\bin\Debug\Ошибки.exe.config
+C:\Users\Пользователь\source\repos\Ошибки\Ошибки\bin\Debug\Ошибки.exe
+C:\Users\Пользователь\source\repos\Ошибки\Ошибки\bin\Debug\Ошибки.pdb
+C:\Users\Пользователь\source\repos\Ошибки\Ошибки\obj\Debug\Ошибки.csprojAssemblyReference.cache
+C:\Users\Пользователь\source\repos\Ошибки\Ошибки\obj\Debug\Ошибки.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\Ошибки\Ошибки\obj\Debug\Ошибки.exe
+C:\Users\Пользователь\source\repos\Ошибки\Ошибки\obj\Debug\Ошибки.pdb

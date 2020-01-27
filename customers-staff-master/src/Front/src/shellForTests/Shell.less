@@ -1,0 +1,49 @@
+:local {
+  .root {
+    min-height: 100%;
+    background-color: #e3e3e3;
+    min-width: 100%;
+    display: inline-block;
+  }
+
+  .shell {
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1400px;
+    min-width: 900px;
+  }
+
+  .content {
+    background: #fff;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex: 1 1 auto;
+    min-height: 640px;
+    position: relative;
+    min-width: 0;
+  }
+
+  .menuContent{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row-reverse;
+    min-width: 0;
+  }
+
+  .left {
+    background: #136DAB;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    min-height: 100%;
+    padding-bottom: 40px;
+    position: relative;
+    width: 100px;
+    z-index: 200;
+  }
+
+  .right {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+  }
+}

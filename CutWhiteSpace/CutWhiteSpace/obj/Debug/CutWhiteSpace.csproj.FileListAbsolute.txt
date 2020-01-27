@@ -1,0 +1,6 @@
+C:\Users\Пользователь\source\repos\CutWhiteSpace\CutWhiteSpace\bin\Debug\CutWhiteSpace.exe.config
+C:\Users\Пользователь\source\repos\CutWhiteSpace\CutWhiteSpace\bin\Debug\CutWhiteSpace.exe
+C:\Users\Пользователь\source\repos\CutWhiteSpace\CutWhiteSpace\bin\Debug\CutWhiteSpace.pdb
+C:\Users\Пользователь\source\repos\CutWhiteSpace\CutWhiteSpace\obj\Debug\CutWhiteSpace.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\CutWhiteSpace\CutWhiteSpace\obj\Debug\CutWhiteSpace.exe
+C:\Users\Пользователь\source\repos\CutWhiteSpace\CutWhiteSpace\obj\Debug\CutWhiteSpace.pdb

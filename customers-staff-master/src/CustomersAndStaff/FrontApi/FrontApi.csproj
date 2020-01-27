@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net471</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyName>Market.CustomersAndStaff.FrontApi</AssemblyName>
+    <RootNamespace>Market.CustomersAndStaff.FrontApi</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Alko.Configuration.Serilog.Code.Houston" Version="0.0.1" />
+    <PackageReference Include="Kontur.Tracing.ClusterConfig" Version="1.0.97" />
+    <PackageReference Include="Market.Api.Client" Version="1.1.5" />
+    <PackageReference Include="Alko.Configuration.Serilog.Code" Version="0.0.2" />
+    <PackageReference Include="Alko.Configuration.Serilog.Code.Console" Version="0.0.1" />
+    <PackageReference Include="Alko.Configuration.Settings" Version="0.0.7" />
+    <PackageReference Include="Kontur.Houston.AspNetCore" Version="1.0.10" />
+    <PackageReference Include="Kontur.Houston.Plugin" Version="1.0.184" />
+    <PackageReference Include="Kontur.Houston.Plugin.Vostok" Version="1.0.213" />
+    <PackageReference Include="Vostok.Logging.Kontur.Legacy" Version="1.0.172" />
+    <PackageReference Include="Vostok.Logging.Serilog" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AspNetCore.Core\AspNetCore.Core.csproj" />
+    <ProjectReference Include="..\EvrikaPrintClient\EvrikaPrintClient.csproj" />
+    <ProjectReference Include="..\FrontApi.Converters\FrontApi.Converters.csproj" />
+    <ProjectReference Include="..\FrontApi.Dto\FrontApi.Dto.csproj" />
+    <ProjectReference Include="..\ModelValidators\ModelValidators.csproj" />
+    <ProjectReference Include="..\Portal.Core\Portal.Core.csproj" />
+    <ProjectReference Include="..\Repositories\Repositories.csproj" />
+    <ProjectReference Include="..\Services\Services.csproj" />
+    <ProjectReference Include="..\Topshelf.Core\Topshelf.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Settings\frontApi.csf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

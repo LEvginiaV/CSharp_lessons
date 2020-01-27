@@ -1,0 +1,5 @@
+﻿@importSettings "CustomersAndStaff\graphite.csf"
+@importSettings "CustomersAndStaff\cassandra.csf"
+
+ServiceName = Market.CustomersAndStaff.RepositoriesTests
+LogDirectory = logs

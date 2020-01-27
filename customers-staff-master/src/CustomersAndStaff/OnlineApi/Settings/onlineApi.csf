@@ -1,0 +1,15 @@
+﻿@importSettings "CustomersAndStaff\graphite.csf"
+@importSettings "CustomersAndStaff\portal.csf"
+@importSettings "CustomersAndStaff\marketApi.csf"
+@importSettings "CustomersAndStaff\cassandra.csf"
+@importSettings "CustomersAndStaff\printer.csf"
+
+ServiceName = CustomersAndStaff.OnlineApi
+LogDirectory = logs
+
+Api.IsDevelopment = True
+Api.Port = 17711
+Api.StopTimeout = 00:01:00
+Api.Prefix = recordingApi
+
+ThreadMultiplier = 16

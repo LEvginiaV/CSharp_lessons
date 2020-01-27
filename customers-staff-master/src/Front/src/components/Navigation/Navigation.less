@@ -1,0 +1,46 @@
+@import "../../Colors";
+
+:local {
+  @activeColor: #dfdfdf;
+  @hoverColor: #efefef;
+
+  .item {
+    display: flex;
+    width: 100%;
+    height: 33px;
+    align-items: center;
+    padding-left: 20px;
+    color: #4a4a4a;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: @hoverColor;
+    }
+  }
+
+  .active {
+    background-color: @activeColor;
+    cursor: default;
+
+    &:hover {
+      background-color: @activeColor;
+    }
+  }
+
+  .tutorial {
+    color: #4a4a4a;
+    text-align: center;
+    margin: 0 20px;
+    padding-bottom: 20px;
+  }
+
+  .tutorial:hover {
+    background: @hoverColor;
+    cursor: pointer;
+  }
+
+  .fakeLink {
+    color: @link-text;
+  }
+}

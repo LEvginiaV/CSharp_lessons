@@ -1,0 +1,7 @@
+C:\Users\Пользователь\source\repos\Percent\Percent\obj\Debug\Percent.csprojAssemblyReference.cache
+C:\Users\Пользователь\source\repos\Percent\Percent\obj\Debug\Percent.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\Percent\Percent\bin\Debug\Percent.exe.config
+C:\Users\Пользователь\source\repos\Percent\Percent\bin\Debug\Percent.exe
+C:\Users\Пользователь\source\repos\Percent\Percent\bin\Debug\Percent.pdb
+C:\Users\Пользователь\source\repos\Percent\Percent\obj\Debug\Percent.exe
+C:\Users\Пользователь\source\repos\Percent\Percent\obj\Debug\Percent.pdb

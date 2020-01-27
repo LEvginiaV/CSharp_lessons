@@ -1,0 +1,66 @@
+:local {
+  .root {
+    text-align: center;
+    padding: 0 30px 30px 30px;
+  }
+
+  .header {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .body {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    .left {
+      .arrow;
+      margin-right: 30px;
+    }
+
+    .center {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 720px;
+      height: 400px;
+    }
+
+    .right {
+      .arrow;
+      margin-left: 30px;
+    }
+
+    .arrow {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 28px;
+      font-size: 28px;
+      color: #3072C4;
+      user-select: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .disabledArrow {
+      color: #E5E5E5;
+
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
+
+  .progress {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    height: 48px;
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+}

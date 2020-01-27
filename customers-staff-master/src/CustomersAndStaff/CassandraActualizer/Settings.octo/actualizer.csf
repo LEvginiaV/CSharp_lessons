@@ -1,0 +1,5 @@
+﻿UseClusterConfig = true
+RepositorySettingsPrefix = customersAndStaff
+
+ServiceName = 
+LogDirectory = 

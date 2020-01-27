@@ -1,0 +1,96 @@
+:local {
+  .comboboxItem {
+    width: 360px;
+    overflow: hidden;
+    display: flex;
+
+    .name {
+      flex: 1 1 auto;
+    }
+    .phone {
+      margin-left: 10px;
+      flex: 0 0 auto;
+    }
+  }
+  .comboboxNotFound {
+    width: 340px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .view {
+    position: relative;
+    padding: 8px;
+    margin: -8px 0 0 -8px;
+    &:hover{
+      background: #F2F2F2;
+      border-radius: 2px;
+    }
+    .name {
+      color: #333333;
+      font-size: 16px;
+      line-height: 25px;
+      width: 340px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .line2 {
+      display: flex;
+      color: #808080;
+      font-size: 14px;
+      line-height: 20px;
+
+      .phone {
+        padding-right: 18px;
+      }
+    }
+    .comment {
+      color: #808080;
+      font-size: 14px;
+      line-height: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .kebabIcon {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+    }
+  }
+
+  .addForm {
+    background: #F2F2F2;
+    border-radius: 2px;
+    position: relative;
+    padding: 8px;
+    margin: -8px 0 0 -8px;
+
+    .line1 {
+      margin-right: 32px;
+    }
+
+    .line2 {
+      margin-top: 15px;
+    }
+    .field {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .label {
+      color: #808080;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .phoneError {
+      color: #CE0014;
+      margin-top: 8px;
+    }
+    .kebabIcon {
+      position: absolute;
+      top: 13px;
+      right: 10px;
+    }
+  }
+}

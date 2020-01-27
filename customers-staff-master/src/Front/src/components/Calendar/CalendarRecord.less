@@ -1,0 +1,156 @@
+:local{
+  .empty {
+    color: #808080;
+  }
+
+  .recordWrap {
+    padding: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    max-width: 440px;
+  }
+
+  .record {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 14px;
+
+    &.statusActive {
+      background: #F5E0F3;
+    }
+    &.statusAccepted {
+      background: #E4F3FF;
+    }
+    &.statusCompleted {
+      background: #D9F1E3;
+    }
+    &:hover {
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .topPad {
+      flex: 1 1 auto;
+      max-height: 8px;
+    }
+    .middlePad {
+      flex: 1 1 auto;
+      max-height: 7px;
+    }
+    .line2 {
+      margin-top: -3px;
+      padding: 0 0 8px 20px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  .lineName {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    .icon {
+      flex: 0 0 auto;
+      width: 20px;
+    }
+    .name {
+      flex: 1 1 auto;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .phone {
+      flex: 0 0 auto;
+      white-space: nowrap;
+      padding-left: 6px;
+    }
+  }
+
+
+  .tooltip {
+    width: 340px;
+    padding-right: 10px;
+    font-size: 14px;
+
+    .flex {
+      display: flex;
+      .text {
+        flex: 1 1 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .value {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding-left: 6px;
+      }
+    }
+
+    .head {
+      white-space: nowrap;
+      display: flex;
+      margin-bottom: 15px;
+
+      .time {
+        flex: 1 1 auto;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .links {
+        flex: 0 0 auto;
+      }
+    }
+
+    .person {
+      margin-bottom: 10px;
+      .line2 {
+        color: #808080;
+        margin-top: 6px;
+      }
+    }
+
+    .services {
+      margin-top: 15px;
+      .delimiter {
+        border-top: 1px solid #DADADA;
+        border-bottom: 1px solid #DADADA;
+        padding: 4px 0 6px;
+      }
+      .element {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        .name {
+          flex: 1 1 auto;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .price {
+          flex: 0 0 auto;
+          white-space: nowrap;
+        }
+      }
+      .total {
+        margin-top: 4px;
+        text-align: right;
+      }
+    }
+    .comment {
+      margin-top: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+﻿@importSettings "CustomersAndStaff\graphite.csf"
+@importSettings "CustomersAndStaff\cassandra.csf"
+
+ServiceName = CustomersAndStaff.GodLikeTools
+LogDirectory = logs
+
+ThreadMultiplier = 16

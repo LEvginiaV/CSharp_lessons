@@ -1,0 +1,37 @@
+:local {
+  @color: #5199DB;
+  @dimmedColor: #808080;
+  @size: 75px;
+
+  .common {
+    width: @size;
+    height: @size;
+    flex: 0 0 @size;
+  }
+
+  .avatar {
+    .common();
+    border: 2px solid @color;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    padding-top: 9px;
+    color: @color;
+    font-size: 34px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+  }
+
+  .gender {
+    .common();
+    background: no-repeat 0 0;
+    background-size: 100%;
+  }
+
+  .dimmed {
+    font-size: 31px;
+    padding-top: 12px;
+    color: @dimmedColor;
+    border-color: @dimmedColor;
+  }
+}

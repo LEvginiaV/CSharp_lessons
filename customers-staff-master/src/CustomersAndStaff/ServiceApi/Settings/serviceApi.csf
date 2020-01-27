@@ -1,0 +1,9 @@
+﻿@importSettings "CustomersAndStaff\graphite.csf"
+@importSettings "CustomersAndStaff\cassandra.csf"
+
+ServiceName = CustomersAndStaff.ServiceApi
+LogDirectory = logs
+
+Api.IsDevelopment = True
+Api.Port = 16001
+Api.StopTimeout = 00:01:00

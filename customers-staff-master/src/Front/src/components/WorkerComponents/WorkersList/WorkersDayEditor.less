@@ -1,0 +1,79 @@
+@import "../../../Colors";
+
+:local {
+  .header {
+    font-size: 16px;
+    margin-bottom: 9px;
+
+    .date {
+      margin-right: 10px;
+    }
+
+    .dayOfWeek {
+      color: @gray-text;
+    }
+  }
+
+  .dash {
+    color: @almost-black-text;
+    font-weight: 500;
+  }
+
+  .editingHeader {
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 18px;
+  }
+
+  .editingRow {
+    display: flex;
+  }
+
+  .title {
+    padding-top: 7px;
+    width: 92px;
+  }
+
+  .icon {
+    vertical-align: top;
+    padding-top: 7px;
+    padding-left: 11px;
+  }
+
+  .deleteIcon {
+    color: @gray-text;
+  }
+
+  .deleteIcon:hover {
+    color: @error-text;
+    cursor: pointer;
+  }
+
+  .nextDayLabel {
+    height: 24px;
+    vertical-align: top;
+    color: @gray-text;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 90px;
+  }
+
+  .errorMessage {
+    height: 19px;
+    color: @error-text;
+    padding-top: 4px;
+    padding-bottom: 7px;
+  }
+
+  .timeInfo {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 6px;
+  }
+
+  .timeInfoNextDate {
+    font-size: 14px;
+    color: @gray-text;
+  }
+}

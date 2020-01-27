@@ -1,0 +1,8 @@
+﻿@importSettings "CustomersAndStaff\graphite.csf"
+@importSettings "CustomersAndStaff\portal.csf"
+@importSettings "CustomersAndStaff\marketApi.csf"
+@importSettings "CustomersAndStaff\cassandra.csf"
+@importSettings "CustomersAndStaff\printer.csf"
+
+ServiceName = Market.CustomersAndStaff.EvrikaPrintIntegrationTests
+LogDirectory = logs

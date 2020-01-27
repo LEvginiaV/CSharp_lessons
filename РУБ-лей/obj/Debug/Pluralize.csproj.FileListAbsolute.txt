@@ -1,0 +1,8 @@
+C:\Users\Пользователь\source\repos\РУБ-лей\obj\Debug\Pluralize.csprojAssemblyReference.cache
+C:\Users\Пользователь\source\repos\РУБ-лей\obj\Debug\Pluralize.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\РУБ-лей\bin\Debug\rubles.txt
+C:\Users\Пользователь\source\repos\РУБ-лей\bin\Debug\Pluralize.exe.config
+C:\Users\Пользователь\source\repos\РУБ-лей\bin\Debug\Pluralize.exe
+C:\Users\Пользователь\source\repos\РУБ-лей\bin\Debug\Pluralize.pdb
+C:\Users\Пользователь\source\repos\РУБ-лей\obj\Debug\Pluralize.exe
+C:\Users\Пользователь\source\repos\РУБ-лей\obj\Debug\Pluralize.pdb

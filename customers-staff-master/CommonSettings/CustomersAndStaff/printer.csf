@@ -1,0 +1,5 @@
+Printer.Host = https://api.testkontur.ru/evrika/printer/
+Printer.RepeatReplicasCount = 3
+Printer.Timeout = 00:00:30
+Printer.TestAuthUrls = https://api.testkontur.ru/auth,https://api.testkontur.ru/auth,https://api.testkontur.ru/auth
+Printer.ApiKey = 42fd88ee-1748-443c-841c-51fbbf89e670

@@ -1,0 +1,6 @@
+﻿Portal.ApiKey = 9DA7020E-818B-496A-86F6-F8758B51AF7D
+Portal.AuthUrls = http://localhost:1111
+Portal.RequisitesUrls = http://localhost:1112/requisites
+
+Portal.MasterLogin = adksuperuser
+Portal.MasterPassword = BlkGDUnDkDA*3$

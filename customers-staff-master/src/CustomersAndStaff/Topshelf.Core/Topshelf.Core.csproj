@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <RootNamespace>Market.CustomersAndStaff.Topshelf.Core</RootNamespace>
+    <AssemblyName>Market.CustomersAndStaff.Topshelf.Core</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Alko.Configuration.Settings" Version="0.0.7" />
+    <PackageReference Include="Alko.Configuration.Process" Version="0.0.1" />
+    <PackageReference Include="Alko.Configuration.Serilog.Code" Version="0.0.2" />
+    <PackageReference Include="Topshelf" Version="4.2.0" />
+    <PackageReference Include="Topshelf.Serilog" Version="4.2.0" />
+    <PackageReference Include="Vostok.Logging.Serilog" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GroboContainer.Core\GroboContainer.Core.csproj" />
+  </ItemGroup>
+</Project>

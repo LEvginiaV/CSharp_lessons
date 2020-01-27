@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyName>Market.CustomersAndStaff.FunctionalTests</AssemblyName>
+    <RootNamespace>Market.CustomersAndStaff.FunctionalTests</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <OutputPath>bin\</OutputPath>
+    <NoWarn>1701;1702;0649</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\</OutputPath>
+    <NoWarn>1701;1702;0649</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.6.0" />
+    <PackageReference Include="GroupDocs.Comparison" Version="19.5.0" />
+    <PackageReference Include="Kontur.RetryableAssertions" Version="0.0.1" />
+    <PackageReference Include="Kontur.Selone" Version="0.0.5" />
+    <PackageReference Include="Market.FakeMarketApi.ConfigurationClient" Version="0.0.1" />
+    <PackageReference Include="NUnit" Version="3.11.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.12.0" />
+    <PackageReference Include="Portal.ClientEx" Version="1.0.499" />
+    <PackageReference Include="Market.Api.Client" Version="1.1.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FunctionalTests.Components\FunctionalTests.Components.csproj" />
+    <ProjectReference Include="..\Portal.Core\Portal.Core.csproj" />
+    <ProjectReference Include="..\Services\Services.csproj" />
+    <ProjectReference Include="..\Tests.Core\Tests.Core.csproj" />
+    <ProjectReference Include="..\Utils\Utils.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Settings\settings.csf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Tests\WorkOrderTests\Files\Заказ-наряд.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Tests\WorkOrderTests\Files\Квитанция к заказ-наряду.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net471</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyName>Market.CustomersAndStaff.GodLikeTools</AssemblyName>
+    <RootNamespace>Market.CustomersAndStaff.GodLikeTools</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="EntryPoint.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Alko.Configuration.Serilog.Code" Version="0.0.2" />
+    <PackageReference Include="Alko.Configuration.Serilog.Code.Console" Version="0.0.1" />
+    <PackageReference Include="GroboContainer" Version="1.2.45" />
+    <PackageReference Include="Vostok.Logging.Serilog" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GroboContainer.Core\GroboContainer.Core.csproj" />
+    <ProjectReference Include="..\Repositories\Repositories.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Settings.octo\godLikeTools.csf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Settings\godLikeTools.csf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

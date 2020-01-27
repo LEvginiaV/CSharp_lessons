@@ -1,0 +1,7 @@
+c:\users\пользователь\source\repos\DataType\DataType\bin\Debug\DataType.exe.config
+c:\users\пользователь\source\repos\DataType\DataType\bin\Debug\DataType.exe
+c:\users\пользователь\source\repos\DataType\DataType\bin\Debug\DataType.pdb
+c:\users\пользователь\source\repos\DataType\DataType\obj\Debug\DataType.csprojAssemblyReference.cache
+c:\users\пользователь\source\repos\DataType\DataType\obj\Debug\DataType.csproj.CoreCompileInputs.cache
+c:\users\пользователь\source\repos\DataType\DataType\obj\Debug\DataType.exe
+c:\users\пользователь\source\repos\DataType\DataType\obj\Debug\DataType.pdb

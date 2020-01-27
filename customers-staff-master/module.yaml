@@ -1,0 +1,20 @@
+solution-tests:
+  deps:
+    - alco.solution-tests
+
+full-build *default:
+  deps:
+    - force: $CURRENT_BRANCH
+    - alco.core
+    - alco.global-services
+    - alco.tools
+    - alco.customers-staff-ui
+    - alco.local-portal
+    - alco.fake-market-api
+  build:
+    target: src\CustomersAndStaff\CustomersAndStaff.sln
+    configuration: Release
+    tool:
+      name: msbuild
+      version: "15.0"
+

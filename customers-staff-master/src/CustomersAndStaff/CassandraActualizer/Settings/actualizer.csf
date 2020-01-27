@@ -1,0 +1,7 @@
+﻿@importSettings "CustomersAndStaff\cassandra.csf"
+
+ServiceName = CustomersAndStaff.CassandraActualizer
+LogDirectory = logs
+
+UseClusterConfig = false
+RepositorySettingsPrefix = customersAndStaff

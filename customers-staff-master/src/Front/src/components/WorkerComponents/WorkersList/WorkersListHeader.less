@@ -1,0 +1,167 @@
+@import "../../../Colors";
+
+:local {
+  .noSelect() {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .loadingFailedMessage {
+    margin-right: 5px;
+    color: @error-text;
+  }
+
+  .headerContainer {
+    background-color: white;
+    margin-left: -30px;
+    padding-left: 30px;
+    margin-right: -30px;
+    padding-right: 30px;
+    padding-top: 32px;
+  }
+
+  .headerContainerShadow {
+    box-shadow: 0 7px 14px -7px rgba(0, 0, 0, 0.12);
+  }
+
+  .headerLine1 {
+    display: flex;
+    align-items: center;
+    .noSelect();
+
+    .titleText {
+      margin-right: 20px;
+      padding-bottom: 2px;
+    }
+
+    .flexStub {
+      flex: 0 0 60px;
+    }
+
+    .monthSwitcher {
+      flex-grow: 1;
+      font-size: 16px;
+      text-align: center;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      max-width: 653px;
+
+      .monthName {
+        font-weight: 500;
+        min-width: 70px;
+      }
+
+      .wideMonthName {
+        .monthName();
+        min-width: 110px;
+      }
+
+      .arrowButton {
+        font-size: 14px;
+        padding: 5px 10px;
+        color: @link-text;
+        cursor: pointer;
+      }
+
+      .arrowButtonDisabled {
+        .arrowButton();
+        color: @gray-text;
+        cursor: default;
+      }
+    }
+
+    .helpLinkDefault {
+      margin-left: auto;
+    }
+  }
+
+  .headerLine1Small {
+    width: 500px;
+  }
+
+  .headerLine2 {
+    margin-left: 315px;
+    max-width: 653px;
+    text-align: center;
+    height: 23px;
+  }
+
+  .headerLine3 {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .grayLine {
+    margin-top: -1px;
+    border-bottom: 1px solid @table-border-color;
+    width: 500px;
+    margin-left: -10px;
+    padding-left: 10px;
+  }
+
+  .grayLineFixed {
+    .grayLine();
+    width: 100%;
+    margin-left: -30px;
+    padding-left: 30px;
+    margin-right: -30px;
+    padding-right: 30px;
+    z-index: 95;
+  }
+
+  .tabsBorder {
+    border-bottom: 1px solid @table-border-color;
+    margin-left: -10px;
+    padding-left: 10px;
+  }
+
+  .tabs {
+    margin-bottom: -1px;
+    width: 500px;
+
+    .tabItem {
+      font-size: 16px;
+    }
+  }
+
+  .tableTabs {
+    .tabs();
+    width: 300px;
+  }
+
+  .dates {
+    display: flex;
+  }
+
+  .tableCell {
+    border: 1px solid @table-border-color;
+    border-right: none;
+
+    width: 21px;
+    height: 21px;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .tableCell:last-child {
+    border-right: 1px solid @table-border-color;
+  }
+
+  .weekendColors {
+    background-color: @block-background-hover;
+    color: @gray-text;
+  }
+
+  .todayBorder {
+    border: solid 3px red;
+    position: relative;
+    top: -23px;
+    left: -3px;
+    width: 21px;
+    height: 21px;
+    z-index: 110;
+  }
+}

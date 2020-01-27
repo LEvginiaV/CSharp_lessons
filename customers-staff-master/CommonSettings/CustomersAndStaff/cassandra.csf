@@ -1,0 +1,4 @@
+CustomersAndStaff.Cassandra.Keyspace = customers_staff
+CustomersAndStaff.Cassandra.LockTtlSeconds = 30
+CustomersAndStaff.Cassandra.LockKeyspace = lock_customer_staff
+CassandraConnectionString = [{"Settings": {"Endpoints": [ "127.0.0.1:9042" ],"ReplicationFactor": 1,"PageSize": 1000,"ReconnectionPolicy": 1000,"ConsistencyLevel": "Quorum"},"Keyspaces": ["customers_staff", "lock_customer_staff"]}]

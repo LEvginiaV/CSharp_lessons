@@ -1,0 +1,80 @@
+
+:local {
+
+
+  .errorText {
+    color: #CE0014
+  }
+
+  .warningText {
+    color: #D97E00;
+  }
+  .timeValidation {
+    margin-top: 5px;
+    display: flex;
+    .timeError {
+      flex: 1 1 auto;
+    }
+    .dateError {
+      min-width: 120px;
+      margin-left: 10px;
+    }
+  }
+
+  .row {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: baseline;
+
+    .label {
+      width: 125px;
+      flex: 0 0 auto;
+    }
+    .value {
+      width: 380px;
+      flex: 0 0 auto;
+
+      .datetime {
+        display: flex;
+        position: relative;
+        align-items: baseline;
+        .timeInputs {
+          flex: 1 1 auto;
+        }
+        .loading {
+          margin-right: 10px
+        }
+      }
+    }
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 360px;
+
+    &>span:first-child {
+      margin-right: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &>span:last-child {
+      flex: 0 0 auto;
+    }
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    .buttons {
+      flex: 1 1 auto;
+    }
+    .total {
+      font-size: 16px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+  }
+
+}

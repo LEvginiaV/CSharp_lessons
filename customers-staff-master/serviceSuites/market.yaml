@@ -1,0 +1,13 @@
+suiterefs:
+  - ~\alco.global-services\serviceSuites\cassandra.yaml
+baseDirectory: ..\src\CustomersAndStaff\
+services:
+  - !dbactualizer
+    path: CassandraActualizer\bin\Market.CustomersAndStaff.CassandraActualizer.exe
+    name: CustomersAndStaff.CassandraActualizer
+  - !exe
+    path: ServiceApi\bin\Market.CustomersAndStaff.ServiceApi.exe
+    name: CustomersAndStaff.ServiceApi
+  - !exe
+    path: FrontApi\bin\Market.CustomersAndStaff.FrontApi.exe
+    name: CustomersAndStaff.FrontApi

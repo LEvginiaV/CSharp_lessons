@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyName>Market.CustomersAndStaff.OnlineApi.Converters</AssemblyName>
+    <RootNamespace>Market.CustomersAndStaff.OnlineApi.Converters</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Alko.Configuration.Serilog.Code.Houston" Version="0.0.1" />
+    <PackageReference Include="Market.Api.Client" Version="1.1.5" />
+    <PackageReference Include="Alko.Configuration.Serilog.Code" Version="0.0.2" />
+    <PackageReference Include="Alko.Configuration.Serilog.Code.Console" Version="0.0.1" />
+    <PackageReference Include="Alko.Configuration.Settings" Version="0.0.7" />
+    <PackageReference Include="morelinq" Version="3.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ModelValidators\ModelValidators.csproj" />
+    <ProjectReference Include="..\OnlineApi.Dto\OnlineApi.Dto.csproj" />
+    <ProjectReference Include="..\Utils\Utils.csproj" />
+  </ItemGroup>
+</Project>

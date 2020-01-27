@@ -1,0 +1,58 @@
+:local {
+  .root {
+    padding: 30px 25px 0 0;
+    background: white;
+  }
+
+  .loader {
+    height: 100%;
+  }
+
+  .body {
+    width: ~"calc(100% - 45px)";
+    margin-left: 45px;
+    margin-bottom: 30px;
+  }
+
+  .firsLineBlock {
+    display: flex;
+    align-items: stretch;
+
+    & >div {
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 0;
+      margin-left: 30px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .stickyContent {
+    background: #EFEFEF;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    margin-right: -25px;
+
+
+    .saveButton {
+      margin-left: 75px;
+    }
+
+    .printLink {
+      margin-left: 40px;
+    }
+  }
+
+  .fixedStickyContent {
+    .stickyContent;
+    box-shadow: 0 -6px 5px -5px rgba(0.5, 0.5, 0.5, 0.5);
+  }
+
+  .additionalTextCaption {
+    margin-bottom: 15px;
+  }
+}

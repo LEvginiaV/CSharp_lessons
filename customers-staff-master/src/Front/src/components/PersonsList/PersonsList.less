@@ -1,0 +1,94 @@
+.commonRow(){
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+:local {
+  .wrapper {
+    width: 500px;
+  }
+
+  .wideWrapper {
+    width: 550px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+
+    .button {
+      margin-left: 20px;
+    }
+
+    .helpLink {
+      margin-left: auto;
+    }
+  }
+
+  .search {
+    margin-bottom: 35px;
+  }
+
+  .tableHading {
+    .commonRow();
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DFDFDF;
+  }
+
+  .item {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    cursor: pointer;
+    .commonRow();
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+
+      .name {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .itemInner {
+    padding-top: 10px;
+    padding-bottom: 12px;
+  }
+
+  .name {
+    font-size: 16px;
+    margin-bottom: 2px;
+    min-width: 200px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #3072C4;
+    text-decoration: none;
+  }
+
+  .nameDimmed {
+    color: #a0a0a0;
+  }
+
+  .notFoundCaption {
+    line-height: 28px;
+    font-size: 18px;
+    text-align: center;
+    color: #808080;
+    margin-top: 90px;
+  }
+
+  .emptyLoader {
+    margin-top: 200px;
+  }
+
+  .description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

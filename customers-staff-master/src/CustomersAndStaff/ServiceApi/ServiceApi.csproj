@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
+    <RootNamespace>Market.CustomersAndStaff.ServiceApi</RootNamespace>
+    <AssemblyName>Market.CustomersAndStaff.ServiceApi</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AspNetCore.Core\AspNetCore.Core.csproj" />
+    <ProjectReference Include="..\ModelValidators\ModelValidators.csproj" />
+    <ProjectReference Include="..\Repositories\Repositories.csproj" />
+    <ProjectReference Include="..\Services\Services.csproj" />
+    <ProjectReference Include="..\Topshelf.Core\Topshelf.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Settings\serviceApi.csf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Alko.Configuration.Serilog.Code.Houston" Version="0.0.1" />
+    <PackageReference Include="Alko.Configuration.Serilog.Code" Version="0.0.2" />
+    <PackageReference Include="Alko.Configuration.Serilog.Code.Console" Version="0.0.1" />
+    <PackageReference Include="Alko.Configuration.Settings" Version="0.0.7" />
+    <PackageReference Include="Kontur.Houston.AspNetCore" Version="1.0.10" />
+    <PackageReference Include="Kontur.Houston.Plugin" Version="1.0.184" />
+    <PackageReference Include="Kontur.Houston.Plugin.Vostok" Version="1.0.213" />
+    <PackageReference Include="Kontur.Tracing.ClusterConfig" Version="1.0.97" />
+    <PackageReference Include="Vostok.Logging.Kontur.Legacy" Version="1.0.172" />
+    <PackageReference Include="Vostok.Logging.Serilog" Version="1.0.1" />
+  </ItemGroup>
+</Project>

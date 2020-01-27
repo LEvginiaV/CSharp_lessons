@@ -1,0 +1,5 @@
+Graphite.Enabled = false
+Graphite.AnnotationsUrl = https://graphite-test.skbkontur.ru/events/events/
+Graphite.StatsD = graphite-test:8125
+Graphite.Relay = graphite-test:2003
+Graphite.MetricsPrefix = CashboxLocal

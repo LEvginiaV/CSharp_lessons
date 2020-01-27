@@ -1,0 +1,57 @@
+:local {
+  .row {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+
+    .index {
+      text-align: right;
+      margin-right: 7px;
+
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 25px;
+      color: #A0A0A0;
+    }
+
+    .item {
+      margin-right: 10px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+      min-width: 0;
+
+      &:nth-last-child(2) {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-right: 5px;
+        width: 15px;
+      }
+    }
+  }
+
+  .rowWrapper {
+    padding: 10px 0;
+    border-bottom: 1px solid #DFDFDF;
+  }
+
+  .priceLabel {
+    padding: 0 10px;
+    box-sizing: border-box;
+    white-space: nowrap;
+  }
+
+  .cardItem {
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .unitType {
+    margin-left: 5px;
+    color: #333;
+  }
+}
